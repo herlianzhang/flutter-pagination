@@ -4,5 +4,5 @@ import 'package:pagination_example/model/my_model.dart';
 class HomeRepository {
   final myApiProvider = MyApiProvider();
 
-  Future<MyModel> fetchList(page) => myApiProvider.fetchList(page);
+  Future<List<MyModel>> fetchList(page) => myApiProvider.fetchList(page);
 }
